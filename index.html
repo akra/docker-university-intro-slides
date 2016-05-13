@@ -14,7 +14,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 		<link rel="stylesheet" href="css/reveal.min.css">
-		<link rel="stylesheet" href="css/theme/beige.css" id="theme">
+		<!-- <link rel="stylesheet" href="css/theme/beige.css" id="theme"> -->
+		<link rel="stylesheet" href="css/theme/akra.css" id="theme">
 		<!-- <link rel="stylesheet" href="css/theme/blood.css" id="theme"> -->
 		<!-- <link rel="stylesheet" href="css/theme/default.css" id="theme"> -->
 		<!-- <link rel="stylesheet" href="css/theme/moon.css" id="theme"> -->
@@ -70,6 +71,7 @@
 
         <section>
           <section><h2>ein paar Fragen</h2></section>
+          <section><h2>Benutzt ihr Docker?</h2></section>
           <section><h2>Wo nutzt ihr Docker?</h2></section>
           <section><h2>Sind Container VM?</h2></section>
           <section>
@@ -102,19 +104,32 @@
           <section>
             <h2>Was sind Container?</h2>
             <p class="fragment">Anwendungen + alle Abhängigkeiten</p>
+            <p class="fragment">+ Linux Kernel Namespace</p>
+            <p class="fragment">+ cgroups</p>
+            <p class="fragment">+ iptables</p>
+            <p class="fragment">+ bridge networks</p>
+            <p class="fragment">+ chroot</p>
           </section>
           <section>
             <h2>Was sind Docker Container?</h2>
-            <p class="fragment">Anwendungen + alle Abhängigkeiten</p>
+            <div class="fragment">
+              <p>Anwendungen + alle Abhängigkeiten</p>
+              <p>+ Linux Kernel Namespace</p>
+              <p>+ cgroups</p>
+              <p>+ iptables</p>
+              <p>+ bridge networks</p>
+              <p>+ chroot</p>
+            </div>
           </section>
           <section>
             <h2>Was ist anders?</h2>
           </section>
           <section>
+            <h2>Docker Container Layer</h2>
             <img src="images/docker_container_layer.png" />
           </section>
           <section>
-            <h2>und eine menge Werkzeuge</h2>
+            <h2>und eine Menge Werkzeuge</h2>
             <ul>
               <li class="fragment">Docker Engine</li>
               <li class="fragment">Docker Hub</li>
@@ -133,23 +148,28 @@
               <li class="fragment">Windows Server 2016</li>
             </ul>
           </section>
+        </section>
+
+        <section>
+          <section>
+            <h2>Was sollte ein Container haben?</h2>
+            <p class="fragment">Vorzugsweise ein Process</p>
+          </section>
 
           <section>
-            <h2>Was sollte in einem Container laufen?</h2>
-            <p class="fragment">Vorzugsweise ein Process</p>
+            <h2>Was sollte ein Container nicht haben?</h2>
+            <p class="fragment">State im Dateisystem</p>
           </section>
         </section>
 
         <section>
         	<h1>Fragen?</h1>
         </section>
-<!--
-Wie verwendet man Docker richtig?
-Was ist die Technologie hinter Docker?
-Wie kommunizieren Docker Container untereinander.
-Ne Live Demo oder so kommt bestimmt gut an
-Könntest auch in Richtung "Docker entmysthifiziert" gehen
--->
+
+        <section>
+          <h2><a href="http://jobs.akra.de/">jobs.akra.de</a></h2>
+        </section>
+
 				<section>
 					<h1>THE END</h1>
 					<h2>Thanks</h2>
